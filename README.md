@@ -19,3 +19,12 @@ def missing_coder(filename, list_nans):
             df[new_col_name] = new_cols_vals
     return df
 ```
+
+Example usage:
+
+```python
+filename = 'df.csv'
+list_nans = [np.nan, 'na', '888', 999]
+
+df_with_flags = missing_coder(filename=filename, list_nans=list_nans)
+```
