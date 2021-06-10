@@ -1,8 +1,8 @@
 # missingness_dummy_coder
-This function takes a pandas dataframe and a list of missing symbols and creates dummy variables with a missingess flag
+This function takes a filename for a csv, reads it in as a pandas dataframe and creates a list of missing symbols and creates dummy variables with a missingess flag
 
 
-'''python
+```python
 def missing_coder(filename, list_nans):
     df = pd.read_csv(filename, na_values=list_nans)
     cols = df.columns
@@ -18,4 +18,4 @@ def missing_coder(filename, list_nans):
                 new_cols_vals[index] = 1.0
             df[new_col_name] = new_cols_vals
     return df
-    '''
+    ```
