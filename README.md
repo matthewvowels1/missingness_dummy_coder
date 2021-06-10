@@ -17,5 +17,4 @@ def missing_coder(filename, list_nans):
             for index in df.index.values[check_null]:
                 new_cols_vals[index] = 1.0
             df[new_col_name] = new_cols_vals
-    return df
-    ```
+    return df```
